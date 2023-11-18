@@ -60,7 +60,7 @@ def write_wikipedia_data(**kwargs):
     file_name = f'stadium_raw_{timestamp}.csv'
     file_path = f'abfs://footballdataanalytics@footballdataanaltics.dfs.core.windows.net/raw_data/{file_name}'
 
-    data.to_csv(file_path, storage_options={'account_key': 'p8bYQVO2jIYq/BQH8wwjpMjF0hMzz3/dCjBOy/JerC1IfRGbB0h3KMxDLv8FDb400UokaVtEi6Lh+AStp4bRBg=='}, index=False)
+    data.to_csv(file_path, storage_options={'account_key': '{azure_storage_acc_key}'}, index=False)
     return "OK"
 
 # DAG definition
