@@ -1,0 +1,7 @@
+services:
+  webserver:
+    image: apache/airflow:2.2.3
+    user: "501:80"
+    volumes:
+      - /Users/anishmore/Documents/astro/data:/data
+      - /Users/anishmore/Documents/astro/sources:/sources
