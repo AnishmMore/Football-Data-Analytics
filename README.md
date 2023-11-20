@@ -22,17 +22,33 @@ This project involves a complete pipeline for extracting football data from Wiki
     - Initialize Azure Synapse Analytics workspace.
 3. Airflow Setup: Detail how to set up Apache Airflow to run your DAGs.
 
-## Usage
-Extracting Data with Apache Airflow
-  Inside dags is the wikipedia_azure.py which is the main DAG file that has the code for airflow, after running airflow on localhost, start the dag then the data is extracted from wikipedia and then stored in azure data lake v2.
+## Project Components
 
-Data Transformation with Azure Databricks
-  Data is retreived from azure data lake v2 and azure databricks compute engine is used to transform the data which is wrriten in Football Analytics.ipynb you can run the same code on azure databricks to transform the raw_data and store in datalake v2.
+### Extracting Data with Apache Airflow
+- **File**: `wikipedia_azure.py` within the `dags` directory.
+- **Description**: This is the primary DAG file containing the Apache Airflow code. 
+- **Execution**:
+  1. Run Airflow on localhost.
+  2. Initiate the DAG to begin data extraction from Wikipedia.
+  3. Data is subsequently stored in Azure Data Lake Storage Gen2.
 
-Querying Data with Azure Synapse
-  Synapse.sql consists of all queries that i have worked on to further work on visualisation. Synapse is used to better understand the data.
+### Data Transformation with Azure Databricks
+- **File**: `Football Analytics.ipynb`.
+- **Process**:
+  1. Data retrieved from Azure Data Lake Storage Gen2.
+  2. Transformation is executed using the Azure Databricks compute engine.
+  3. Transformed data is then stored back in Azure Data Lake Storage Gen2.
+- **Usage**: Execute the notebook on Azure Databricks to transform the `raw_data`.
 
-Data Visualization in Tableau
-  Tableau is used for visualisation. 
-  ![Tableau](https://github.com/AnishmMore/Football-Data-Analytics/blob/main/tableau_visualisation.png)
+### Querying Data with Azure Synapse
+- **File**: `Synapse.sql`.
+- **Functionality**: Contains a collection of SQL queries used for data analysis.
+- **Utility**: Use these queries in Azure Synapse to derive insights and prepare data for visualization.
+
+### Data Visualization in Tableau
+- **File**: `Football_Analytics.twb`.
+- **Tool**: Tableau is employed for creating visual representations of the data.
+- **Visualization**: The dashboard within the Tableau workbook provides an interactive view of the football data.
+  
+![Tableau](https://github.com/AnishmMore/Football-Data-Analytics/blob/main/tableau_visualisation.png)
   
