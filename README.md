@@ -4,6 +4,7 @@
 This project involves a complete pipeline for extracting football data from Wikipedia, storing it in Azure Data Lake, transforming the data using Azure Databricks, querying the data through Azure Synapse, and visualizing the results in Tableau. It's designed to provide comprehensive analytics on football data for enthusiasts and analysts.
 
 ## Architecture :- End-To-End Data Engineering Project
+![Stadium](https://github.com/AnishmMore/Football-Data-Analytics/blob/main/end-to-end-architecture.png)
 
 
 ## Prerequisites
@@ -33,5 +34,5 @@ Querying Data with Azure Synapse
 
 Data Visualization in Tableau
   Tableau is used for visualisation. 
-  
+  ![Tableau](https://github.com/AnishmMore/Football-Data-Analytics/blob/main/tableau_visualisation.png)
   
